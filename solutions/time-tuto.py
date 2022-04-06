@@ -32,7 +32,7 @@ def getTime():
 def stringTime(hours, mins):  
     # defines AM vs PM
     time = "A"
-    if(hours > 12):
+    if(hours >= 12 and mins > 0):
         hours -= 12
         time = "P"
     
