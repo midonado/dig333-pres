@@ -33,8 +33,9 @@ def stringTime(hours, mins):
     # defines AM vs PM
     time = "A"
     if(hours >= 12 and mins > 0):
-        hours -= 12
         time = "P"
+        if(hours > 12):
+            time -= 12
     
     # returns time as continuous string
     return str(hours).rjust(2, "0") + \
