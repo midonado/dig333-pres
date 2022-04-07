@@ -36,7 +36,7 @@ def stringTime(hours, mins):
         time = "P"
     
     if(hours > 12):
-        time -= 12
+        hours -= 12
     
     # returns time as continuous string
     return str(hours).rjust(2, "0") + \
